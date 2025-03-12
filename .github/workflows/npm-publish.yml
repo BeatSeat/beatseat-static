@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   npm-publish:
-    if: github.repository == 'volantis-x/volantis-static'
+    if: github.repository == 'BeatSeat/beatseat-static'
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
@@ -22,4 +22,4 @@ jobs:
         run: |
           npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_mhuig_token }}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_beatseat_token }}
